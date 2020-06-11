@@ -1,9 +1,9 @@
-# hugo-seraph
+# hugo-mysterium
 Hugo theme for personal gaming blog by seraphinush
 
 ## Prerequisite
 ```
-Hugo Static Site Generator v0.64.0-241DB8F7 windows/amd64 BuildDate: 2020-02-04T09:09:27Z
+Hugo Static Site Generator v0.64.0+
 ```
 
 ## Setup
@@ -17,25 +17,23 @@ title = "Title"
 baseURL = "https://my-account-id.github.io/repository-name/"
 publishDir = "docs"
 languageCode = "en-us"
-theme = "hugo-mysterium-theme"
+theme = "hugo-mysterium"
 
 [params]
 description = "Description"
 dateFormat = "Monday, January 2, 2006"
 
-#faviconUrl = "https://url-link-to-favicon.png"
+# Favicon link
+  #faviconUrl = "https://url-link-to-favicon.png"
 
-# Google Analytics, adsense
-
-#trackingId = "UA-12345678-9"
-#adsenseId = "xx-yyy-1234567891234567"
+# Google Analytics, Adsense
+  #trackingId = "UA-12345678-9"
+  #adsenseId = "xx-yyy-1234567891234567"
 
 # Miscellaneous
-
-#twitchId = "twitch-user-account"
+  #twitchId = "twitch-user-account"
 
 # Custom navigation items
-
 [[params.nav]]
   title = "link_1"
   url = ""
