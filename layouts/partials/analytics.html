@@ -1,0 +1,12 @@
+<!-- google analytics : global site tag (gtag.js) -->
+{{ if site.Params.trackingId }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.trackingId }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.Params.trackingId }}');
+  console.log('loaded google analytics')
+</script>
+{{ end }}

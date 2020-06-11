@@ -1,0 +1,9 @@
+name = "hugo-mysterium"
+license = "MIT"
+description = "Hugo theme for personal gaming blog by seraphinush"
+homepage = "https://github.com/seraphinush/hugo-mysterium"
+min_version = "0.64.0"
+
+[author]
+  name = "Seraphinus Hong"
+  homepage = "https://github.com/seraphinush"

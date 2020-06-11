@@ -1,0 +1,19 @@
+<title>{{ site.Title }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{ if site.Params.author }}<meta name="author" content="{{ site.Params.author }}" />{{ end }}
+{{ if site.Params.description }}<meta name="description" content="{{ site.Params.description }}">{{ end }}
+{{ if site.Params.faviconUrl }}<link rel="icon" type="image/png" href='{{ site.Params.faviconUrl }}'>{{ end }}
+
+<!-- css -->
+<link rel="stylesheet" href='{{ "/css/main.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "/css/header.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "/css/footer.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "/css/article.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "/css/twitch.css" | relURL }}' />
+
+<!-- js -->
+<script type="text/javascript" src="{{"js/main.js" | relURL}}"></script>
+<script type="text/javascript" src="{{"js/twitch.js" | relURL}}"></script>
+
+{{ partial "analytics.html" . }}

@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+{{ range .Pages }}
+<div class="article-list">
+  {{ if .Params.categories }}
+  {{ range .Params.categories }}
+  {{ $url := print "/categories/" (. | urlize) "/" }}
+  <a href="{{ $url | relURL }}">
+    <div class="article-type">
+      {{ . }}
+    </div>
+  </a>
+  {{ end }}
+  {{ end }}
+  <div class="article-info">
+    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  </div>
+  {{ if .Params.tags }}
+  {{ range .Params.tags }}
+  <div class="article-tags">
+    {{ $url := print "/tags/" (. | urlize) "/" }}
+    <a href="{{ $url | relURL }}">{{ . }}</a>
+  </div>
+  {{ end }}
+  {{ end }}
+</div>
+{{ end }}
+{{ end }}

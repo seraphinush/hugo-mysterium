@@ -1,0 +1,11 @@
+<div id="header">
+  <div id="header-left-container">
+    <a href="/mysterium"><span id="header-title">{{ site.Title }}</span></a>
+    {{ if site.Params.description }}<span id="header-desc">{{ site.Params.description }}</span> {{ end }}
+  </div>
+  <div id="header-right-container">
+    {{ range site.Params.nav }}
+      <a href="{{ .url | relURL }}"><div class="nav-item">{{ .title }}</div></a>
+    {{ end }}
+  </div>
+</div>
