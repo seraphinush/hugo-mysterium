@@ -10,7 +10,9 @@
   {{ partial "twitch.html" . }}
   {{ end }}
   <div id="content-frame">
-    {{ partial "donate.html" }}
+    {{ if site.Params.donateUrl }}
+      {{ partial "donate.html" }}
+    {{ end }}
     {{ block "main" . }}{{ end }}
   </div>
   {{ partial "footer.html" . }}

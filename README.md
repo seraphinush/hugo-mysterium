@@ -22,7 +22,10 @@ description = "Description"
 dateFormat = "Monday, January 2, 2006"
 
 # Favicon link
-  #faviconUrl = "https://url-link-to-favicon.png"
+  #faviconUrl = "https://url-to-favicon.png"
+
+# Donation link
+  #donateUrl = "https://url-to-a-donation-page"
 
 # Google Analytics, Adsense
   #trackingId = "UA-12345678-9"
