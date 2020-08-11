@@ -1,4 +1,4 @@
-# hugo-mysterium ![](https://img.shields.io/badge/version-1.00.03-333333.svg?colorA=333333&colorB=169BD7)
+# hugo-mysterium ![](https://img.shields.io/badge/version-1.00.04-333333.svg?colorA=333333&colorB=169BD7)
 Hugo theme for personal gaming blog by seraphinush
 
 ## Prerequisite
