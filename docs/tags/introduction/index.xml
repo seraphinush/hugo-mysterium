@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>introduction on hugo-mysterium-theme</title>
+    <link>https://seraphinush.github.io/hugo-mysterium/01/tags/introduction/</link>
+    <description>Recent content in introduction on hugo-mysterium-theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://seraphinush.github.io/hugo-mysterium/01/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sample post</title>
+      <link>https://seraphinush.github.io/hugo-mysterium/01/about/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://seraphinush.github.io/hugo-mysterium/01/about/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.</description>
+    </item>
+    
+    <item>
+      <title>Hello world!</title>
+      <link>https://seraphinush.github.io/hugo-mysterium/01/hello/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://seraphinush.github.io/hugo-mysterium/01/hello/</guid>
+      <description>hugo-mysterium Hugo theme for personal gaming blog by seraphinush
+Prerequisite Hugo Static Site Generator v0.64.0+
+Setup git submodule add https://github.com/seraphinush/hugo-mysterium.git themes/hugo-mysterium config.toml example title = &amp;#34;Title&amp;#34; baseURL = &amp;#34;https://my-account-id.github.io/repository-name/&amp;#34; publishDir = &amp;#34;docs&amp;#34; languageCode = &amp;#34;en-us&amp;#34; theme = &amp;#34;hugo-mysterium&amp;#34; [params] description = &amp;#34;Description&amp;#34; dateFormat = &amp;#34;Monday, January 2, 2006&amp;#34; # Favicon link #faviconUrl = &amp;#34;https://url-to-favicon.png&amp;#34; # Donation link #donateUrl = &amp;#34;https://url-to-a-donation-page&amp;#34; # Google Analytics, Adsense #trackingId = &amp;#34;UA-12345678-9&amp;#34; #adsenseId = &amp;#34;xx-yyy-1234567891234567&amp;#34; # Miscellaneous #twitchId = &amp;#34;twitch-user-account&amp;#34; # Custom navigation items [[params.</description>
+    </item>
+    
+  </channel>
+</rss>
