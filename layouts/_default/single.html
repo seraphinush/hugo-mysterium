@@ -1,12 +1,12 @@
 {{ define "main" }}
+
 <div class="article-container">
   <div class="article">
     <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
     <p> {{ .Date.Format "Jan 2, 2006" }} </p>
+    <hr />
     {{ .Content }}
   </div>
 </div>
-<div class="article-end" onclick="go_back()">
-  back
-</div>
+
 {{ end }}

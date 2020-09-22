@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 {{ range .Pages }}
+
 <div class="article-list">
   {{ if .Params.categories }}
   {{ range .Params.categories }}
@@ -24,5 +25,7 @@
   {{ end }}
   {{ end }}
 </div>
+
 {{ end }}
+
 {{ end }}

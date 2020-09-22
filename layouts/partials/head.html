@@ -10,10 +10,13 @@
 <link rel="stylesheet" href='{{ "/css/header.css" | relURL }}' />
 <link rel="stylesheet" href='{{ "/css/footer.css" | relURL }}' />
 <link rel="stylesheet" href='{{ "/css/article.css" | relURL }}' />
-<link rel="stylesheet" href='{{ "/css/twitch.css" | relURL }}' />
+
+
+{{ if site.Params.twitchId }}<link rel="stylesheet" href='{{ "/css/twitch.css" | relURL }}' />{{ end }}
 
 <!-- js -->
 <script type="text/javascript" src="{{"js/main.js" | relURL}}"></script>
 <script type="text/javascript" src="{{"js/twitch.js" | relURL}}"></script>
 
 {{ partial "analytics.html" . }}
+{{ partial "adsense.html" . }}
