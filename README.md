@@ -31,9 +31,6 @@ dateFormat = "Monday, January 2, 2006"
   #trackingId = "UA-12345678-9"
   #adsenseId = "xx-yyy-1234567891234567"
 
-# Miscellaneous
-  #twitchId = "twitch-user-account"
-
 # Custom navigation items
 [[params.nav]]
   title = "link_1"
