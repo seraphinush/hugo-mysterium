@@ -1,6 +1,6 @@
 <div id="header">
   <div id="header-left-container">
-    <a href="/"><span id="header-title">{{ site.Title }}</span></a>
+    <a href="{{ "/" | relURL }}"><span id="header-title">{{ site.Title }}</span></a>
     {{ if site.Params.description }}<span id="header-desc">{{ site.Params.description }}</span> {{ end }}
   </div>
   <div id="header-right-container">
