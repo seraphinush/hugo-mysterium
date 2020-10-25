@@ -6,6 +6,15 @@
   <div class="article-info">
     <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
   </div>
+
+  {{ if .Params.tags }}
+  {{ range .Params.tags }}
+  <div class="article-tags">
+    {{ $url := print "/tags/" (. | urlize) "/" }}
+    <a href="{{ $url | relURL }}">{{ . }}</a>
+  </div>
+  {{ end }}
+  {{ end }}
 </div>
 {{ end }}
 

@@ -11,10 +11,14 @@ Hugo Static Site Generator v0.64.0+
 git submodule add https://github.com/seraphinush/hugo-mysterium.git themes/hugo-mysterium
 ```
 
+## Custom javascript
+- Add `custom.js` file in `/content` folder
+- Set `customJs` to `true` in `config.toml`
+
 ## config.toml example
 ```toml
 title = "Title"
-baseURL = "https://my-account-id.github.io/repository-name/"
+baseURL = "https://<my-account-id>.github.io/<repository-name>/"
 publishDir = "docs"
 languageCode = "en-us"
 theme = "hugo-mysterium"
@@ -22,7 +26,7 @@ theme = "hugo-mysterium"
 [params]
 description = "Description"
 dateFormat = "Monday, January 2, 2006"
-customJs = false | true
+customJs = true || false
 
 # Favicon link
   #faviconUrl = "https://url-to-favicon.png"
