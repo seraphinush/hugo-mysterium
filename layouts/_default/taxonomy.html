@@ -3,17 +3,6 @@
 {{ range .Pages }}
 
 <div class="article-list">
-  {{ if .Params.categories }}
-  {{ range .Params.categories }}
-  {{ $url := print "/categories/" (. | urlize) "/" }}
-  <a href="{{ $url | relURL }}">
-    <div class="article-type">
-      {{ . }}
-    </div>
-  </a>
-  {{ end }}
-  {{ end }}
-
   <div class="article-info">
     <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
   </div>

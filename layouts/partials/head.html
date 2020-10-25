@@ -10,9 +10,14 @@
 <link rel="stylesheet" href='{{ "/css/header.css" | relURL }}' />
 <link rel="stylesheet" href='{{ "/css/footer.css" | relURL }}' />
 <link rel="stylesheet" href='{{ "/css/article.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "/css/modal.css" | relURL }}' />
 
 <!-- js -->
 <script type="text/javascript" src="{{"js/main.js" | relURL}}"></script>
+<script type="text/javascript" src="{{"js/modal.js" | relURL}}"></script>
+
+<!-- custom js -->
+{{ if eq site.Params.customJs true }}<script type="text/javascript" src="{{ "/custom.js" | relURL }}"></script>{{ end }}
 
 {{ partial "analytics.html" . }}
 {{ partial "adsense.html" . }}

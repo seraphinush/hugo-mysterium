@@ -4,13 +4,12 @@
 
 <body>
   {{ partial "header.html" . }}
-  <div id="content-frame">
+  {{ partial "modal.html" . }}
+  <div id="container">
     {{ partial "donate.html" }}
     {{ block "main" . }}{{ end }}
 
-    <div class="article-end" onclick="go_back()">
-      back
-    </div>
+    <div id="back_btn" class="button">back</div>
   </div>
   {{ partial "footer.html" . }}
 </body>
