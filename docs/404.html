@@ -12,9 +12,14 @@
 <link rel="stylesheet" href='/hugo-mysterium/01/css/header.css' />
 <link rel="stylesheet" href='/hugo-mysterium/01/css/footer.css' />
 <link rel="stylesheet" href='/hugo-mysterium/01/css/article.css' />
+<link rel="stylesheet" href='/hugo-mysterium/01/css/modal.css' />
 
 
 <script type="text/javascript" src="/hugo-mysterium/01/js/main.js"></script>
+<script type="text/javascript" src="/hugo-mysterium/01/js/modal.js"></script>
+
+
+
 
 
 
@@ -39,7 +44,12 @@
     
   </div>
 </div>
-  <div id="content-frame">
+  <div id="modal-container">
+  <span id="modal-close">&times;</span>
+  <span style="display: inline-block; height: 50%;"></span>
+  <img id="modal-image" />
+</div>
+  <div id="container">
     
     
 
@@ -51,9 +61,7 @@
 
 
 
-    <div class="article-end" onclick="go_back()">
-      back
-    </div>
+    <div id="back_btn" class="button">back</div>
   </div>
   <div id="footer">
   <div id="footer-content">

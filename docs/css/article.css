@@ -1,0 +1,40 @@
+/* single */
+
+div.article-container {
+  margin-bottom: 10px;
+  padding: 20px 20px;
+  background: rgba(60,60,60,0.8);
+  opacity: 1;
+}
+
+div.article-container::before {
+  opacity: 0.75;
+}
+
+/* list, section, taxonomy  */
+
+div.article-list {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px;
+  min-width: calc(100% - 20px);
+  background: rgba(60,60,60,0.8);
+}
+
+div.article-info {
+  display: inline-block;
+}
+
+div.article-tags {
+  display: inline-block;
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+div.article-tags a {
+  color: #CCC;
+}
+
+div.article-tags a:hover {
+  color: #FFF;
+}

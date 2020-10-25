@@ -1,6 +1,8 @@
 # hugo-mysterium ![](https://img.shields.io/badge/version-2.00.00-333333.svg?colorA=333333&colorB=169BD7)
 Hugo theme for personal gaming blog by seraphinush
 
+[Demo](https://seraphinush.github.io/hugo-mysterium/)
+
 ## Prerequisite
 Hugo Static Site Generator v0.64.0+
 

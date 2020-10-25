@@ -12,9 +12,14 @@
 <link rel="stylesheet" href='/hugo-mysterium/01/css/header.css' />
 <link rel="stylesheet" href='/hugo-mysterium/01/css/footer.css' />
 <link rel="stylesheet" href='/hugo-mysterium/01/css/article.css' />
+<link rel="stylesheet" href='/hugo-mysterium/01/css/modal.css' />
 
 
 <script type="text/javascript" src="/hugo-mysterium/01/js/main.js"></script>
+<script type="text/javascript" src="/hugo-mysterium/01/js/modal.js"></script>
+
+
+
 
 
 
@@ -39,29 +44,28 @@
     
   </div>
 </div>
-  <div id="content-frame">
+  <div id="modal-container">
+  <span id="modal-close">&times;</span>
+  <span style="display: inline-block; height: 50%;"></span>
+  <img id="modal-image" />
+</div>
+  <div id="container">
     
     
 
-
-<div class="article-list">
-  <div class="article-info">
+<div class="article-container">
+  <div class="article">
     <h1><a href="https://seraphinush.github.io/hugo-mysterium/01/about/">Sample post</a></h1>
+    <p> Jun 12, 2020 </p>
+    <hr />
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.</p>
+
   </div>
 </div>
 
-<div class="article-list">
-  <div class="article-info">
-    <h1><a href="https://seraphinush.github.io/hugo-mysterium/01/hello/">Hello world!</a></h1>
-  </div>
-</div>
 
 
-
-
-    <div class="article-end" onclick="go_back()">
-      back
-    </div>
+    <div id="back_btn" class="button">back</div>
   </div>
   <div id="footer">
   <div id="footer-content">
