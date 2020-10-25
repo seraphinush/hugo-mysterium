@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<title>hugo-mysterium-theme</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="hugo theme for personal gaming blog by seraphinush">
+
+
+
+<link rel="stylesheet" href='/hugo-mysterium/css/main.css' />
+<link rel="stylesheet" href='/hugo-mysterium/css/header.css' />
+<link rel="stylesheet" href='/hugo-mysterium/css/footer.css' />
+<link rel="stylesheet" href='/hugo-mysterium/css/article.css' />
+<link rel="stylesheet" href='/hugo-mysterium/css/modal.css' />
+
+
+<script type="text/javascript" src="/hugo-mysterium/js/main.js"></script>
+<script type="text/javascript" src="/hugo-mysterium/js/modal.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+  <div id="header">
+  <div id="header-left-container">
+    <a href="/hugo-mysterium/"><span id="header-title">hugo-mysterium-theme</span></a>
+    <span id="header-desc">hugo theme for personal gaming blog by seraphinush</span> 
+  </div>
+  <div id="header-right-container">
+    
+      <a href="/hugo-mysterium/"><div class="nav-item">link_1</div></a>
+    
+      <a href="/hugo-mysterium/"><div class="nav-item">link_2</div></a>
+    
+      <a href="/hugo-mysterium/"><div class="nav-item">link_3</div></a>
+    
+  </div>
+</div>
+  <div id="modal-container">
+  <span id="modal-close">&times;</span>
+  <span style="display: inline-block; height: 50%;"></span>
+  <img id="modal-image" />
+</div>
+  <div id="container">
+    
+    
+
+<div class="article-container">
+  <div class="article">
+    <h1><a href="https://seraphinush.github.io/hugo-mysterium/hello/">Hello world!</a></h1>
+    <p> Jun 11, 2020 </p>
+    <hr />
+    <h1 id="hugo-mysterium">hugo-mysterium</h1>
+<p>Hugo theme for personal gaming blog by seraphinush</p>
+<p><a href="https://seraphinush.github.io/hugo-mysterium/">Demo</a></p>
+<h2 id="prerequisite">Prerequisite</h2>
+<p>Hugo Static Site Generator v0.64.0+</p>
+<h2 id="setup">Setup</h2>
+<pre><code>git submodule add https://github.com/seraphinush/hugo-mysterium.git themes/hugo-mysterium
+</code></pre><h2 id="custom-javascript">Custom javascript</h2>
+<ul>
+<li>Add <code>custom.js</code> file in <code>/content</code> folder</li>
+<li>Set <code>customJs</code> to <code>true</code> in <code>config.toml</code></li>
+</ul>
+<h2 id="configtoml-example">config.toml example</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Title&#34;</span>
+<span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://&lt;my-account-id&gt;.github.io/&lt;repository-name&gt;/&#34;</span>
+<span style="color:#a6e22e">publishDir</span> = <span style="color:#e6db74">&#34;docs&#34;</span>
+<span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hugo-mysterium&#34;</span>
+
+[<span style="color:#a6e22e">params</span>]
+<span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Description&#34;</span>
+<span style="color:#a6e22e">dateFormat</span> = <span style="color:#e6db74">&#34;Monday, January 2, 2006&#34;</span>
+<span style="color:#a6e22e">customJs</span> = <span style="color:#66d9ef">true</span> <span style="color:#960050;background-color:#1e0010">|</span><span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#66d9ef">false</span>
+
+<span style="color:#75715e"># Favicon link</span>
+  <span style="color:#75715e">#faviconUrl = &#34;https://url-to-favicon.png&#34;</span>
+
+<span style="color:#75715e"># Donation link</span>
+  <span style="color:#75715e">#donateUrl = &#34;https://url-to-a-donation-page&#34;</span>
+
+<span style="color:#75715e"># Google Analytics, Adsense</span>
+  <span style="color:#75715e">#trackingId = &#34;UA-12345678-9&#34;</span>
+  <span style="color:#75715e">#adsenseId = &#34;xx-yyy-1234567891234567&#34;</span>
+
+<span style="color:#75715e"># Custom navigation items</span>
+[[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">nav</span>]]
+  <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;link_1&#34;</span>
+  <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;&#34;</span>
+[[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">nav</span>]]
+  <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;link_2&#34;</span>
+  <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;&#34;</span>
+[[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">nav</span>]]
+  <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;link_3&#34;</span>
+  <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</code></pre></div><h2 id="license">License</h2>
+<p>Copyright 2020 - present Seraphinus Hong</p>
+<p>Released under the MIT License</p>
+
+  </div>
+</div>
+
+
+
+    <div id="back_btn" class="button">back</div>
+  </div>
+  <div id="footer">
+  <div id="footer-content">
+    <span id="footer-title">hugo-mysterium-theme</span>
+    <span>powered by Hugo, theme by seraphinush-gaming</span>
+  </div>
+</div>
+</body>
+
+</html>
