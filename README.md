@@ -24,7 +24,7 @@ git submodule add https://github.com/seraphinush/hugo-mysterium.git themes/hugo-
 ### Custom Javascript
 - Add `custom.js` Javascript file in `/static` folder
 - Set `customJs` to `true` in `config.toml`
-#
+
 ## config.toml example
 ```toml
 title = "Title"
