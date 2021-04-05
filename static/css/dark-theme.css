@@ -4,26 +4,10 @@ html.dark-theme {
   --color-font-bold: #EEE;
   --color-bg: #222;
   --color-bg-bold: #333;
-  --color-code: #d8e6e7;
-  --color-code-border: #6a7f81;
+  --color-code: #3A3C43;
+  --color-code-border: #6A7F81;
   --color-primary: #36ACB6;
   --color-primary-bold: #40CEDB;
   --color-footer: #111;
   --color-footer-font: #AAA;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    --color-font: #DDD;
-    --color-font-light: #AAA;
-    --color-font-bold: #EEE;
-    --color-bg: #222;
-    --color-bg-bold: #333;
-    --color-code: #d8e6e7;
-    --color-code-border: #6a7f81;
-    --color-primary: #36ACB6;
-    --color-primary-bold: #40CEDB;
-    --color-footer: #111;
-    --color-footer-font: #AAA;
-  }
 }
