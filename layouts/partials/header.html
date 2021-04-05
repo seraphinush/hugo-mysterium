@@ -4,7 +4,9 @@
     {{ if site.Params.logo }}
     <img class="nav-logo" src='{{ "/logo.png" }}' alt="" />
     {{else}}
-    <a class="focus" href='{{ "/" | relURL }}'>{{ site.Title }}</a>
+    <a class="focus" href='{{ "/" | relURL }}'>
+      <h1>{{ site.Title }}</h1>
+    </a>
     {{ end }}
 
     <div class="links">
