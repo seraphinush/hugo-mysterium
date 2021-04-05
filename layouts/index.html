@@ -1,11 +1,25 @@
 {{ define "main" }}
+<!-- top level sections / homepage -->
 
-{{ range .Pages }}
-<div class="article-list">
-  <div class="article-info">
-    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+<div class="items flex flex-column">
+
+  {{ range .Pages }}
+  <div class="item flex flex-row">
+    <a class="item-title" href="{{ .Permalink }}">
+      <h4>{{ .Title }}</h4>
+    </a>
+
+    {{ if .Params.tags }}
+    <div class="tags">
+      {{ range .Params.tags }}
+      {{ $url := print (site.Language.Lang) "/tags/" (. | urlize) }}
+      <a class="tag" href="{{$url | relURL }}">{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
   </div>
+  {{ end }}
+
 </div>
-{{ end }}
 
 {{ end }}

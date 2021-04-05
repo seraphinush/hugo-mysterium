@@ -1,11 +1,62 @@
-<div id="header">
-  <div id="header-left-container">
-    <a href="{{ "/" | relURL }}"><span id="header-title">{{ site.Title }}</span></a>
-    {{ if site.Params.description }}<span id="header-desc">{{ site.Params.description }}</span> {{ end }}
-  </div>
-  <div id="header-right-container">
-    {{ range site.Params.nav }}
-      <a href="{{ .url | relURL }}"><div class="nav-item">{{ .title }}</div></a>
+<!-- desktop -->
+<div class="nav flex flex-row">
+  <a href='{{ "/" | relURL }}'>
+    {{ if site.Params.logo }}
+    <img class="nav-logo" src='{{ "/logo.png" }}' alt="" />
+    {{else}}
+    <a class="focus" href='{{ "/" | relURL }}'>{{ site.Title }}</a>
     {{ end }}
+
+    <div class="links">
+      {{ range site.Params.nav }}
+      <a class="link" href='{{ .url | relURL }}'>
+        <span class="line-wrap"><span class="line"></span>
+          {{ .title }}
+        </span>
+      </a>
+      {{ end }}
+    </div>
+
+    <div class="desktop-theme flex-row">
+      <div class="separator-desktop"></div>
+      {{ if eq .Site.Language.Lang "ko" }}
+      <span class="link">디자인 :</span>
+      {{ else }}
+      <span class="link">Appearance :</span>
+      {{ end }}
+      <div id="desktop-theme" class="button">
+        <div id="desktop-theme-toggle" class="button-toggle"></div>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- mobile -->
+<div class="burgers">
+  <div class="burger"></div>
+</div>
+
+<div class="nav-mobile flex flex-column">
+  <div class="links-mobile flex flex-column">
+    {{ range site.Params.nav }}
+    <a class="link-mobile" href='{{ .url | relURL }}'>
+      <span class="line-wrap"><span class="line"></span>
+        <h2>{{ .title }}</h2>
+      </span>
+    </a>
+    {{ end }}
+  </div>
+
+  <div class="separator-mobile"></div>
+
+  <div class="mobile-theme flex flex-row">
+    {{ if eq .Site.Language.Lang "ko" }}
+    <h2>디자인 :</h2>
+    {{ else }}
+    <h2>Appearance :</h2>
+    {{ end }}
+    <div id="mobile-theme" class="button">
+      <div id="mobile-theme-toggle" class="button-toggle"></div>
+    </div>
   </div>
 </div>

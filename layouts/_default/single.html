@@ -1,12 +1,36 @@
 {{ define "main" }}
+<!-- single leaf post -->
 
-<div class="article-container">
-  <div class="article">
-    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-    <p> {{ .Date.Format "Jan 2, 2006" }} </p>
-    <hr />
+{{ if .Parent }}
+<div class="paths">
+  {{ if .Parent.Parent }}
+  {{ if .Parent.Parent.Parent }}
+  <a class="path" href="{{.Parent.Parent.Parent.Permalink }}">{{.Parent.Parent.Parent.Title }}</a> / {{end}}
+  <a class="path" href="{{.Parent.Parent.Permalink }}">{{.Parent.Parent.Title }}</a> / {{end}}
+  <a class="path" href="{{.Parent.Permalink }}">{{.Parent.Title }}</a>
+</div>
+{{ end }}
+
+<h1 class="items-title">{{ .Title }}</h1>
+
+<div class="items">
+
+  <div class="post">
+    <div class="frontmatter">
+      <p>Published : {{ .Date.Format "Jan 2, 2006" }} </p>
+      {{ if isset .Params .Lastmod }}
+      <p>Last modified : {{ .Lastmod.Format "Jan 2, 2006" }} </p>
+      {{ end }}
+    </div>
     {{ .Content }}
+
+    {{ if isset .Params "source" }}
+    <div class="source">
+      <p>Source : {{ .Params.source | markdownify }}</p>
+    </div>
+    {{ end }}
   </div>
+
 </div>
 
 {{ end }}

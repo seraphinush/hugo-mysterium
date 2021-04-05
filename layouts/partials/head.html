@@ -1,23 +1,36 @@
 <title>{{ site.Title }}</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{{ if site.Params.author }}<meta name="author" content="{{ site.Params.author }}" />{{ end }}
-{{ if site.Params.description }}<meta name="description" content="{{ site.Params.description }}">{{ end }}
-{{ if site.Params.faviconUrl }}<link rel="icon" type="image/png" href='{{ site.Params.faviconUrl }}'>{{ end }}
+{{ if site.Params.author }}<meta name="author" content='{{ site.Params.author }}' />{{ end }}
+{{ if site.Params.description }}<meta name="description" content='{{ site.Params.description }}'>{{ end }}
+{{ if site.Params.favicon }}<link rel="icon" type="image/png" href='{{ "/favicon.png" | relURL }}'>{{ end }}
 
 <!-- css -->
-<link rel="stylesheet" href='{{ "/css/main.css" | relURL }}' />
-<link rel="stylesheet" href='{{ "/css/header.css" | relURL }}' />
-<link rel="stylesheet" href='{{ "/css/footer.css" | relURL }}' />
-<link rel="stylesheet" href='{{ "/css/article.css" | relURL }}' />
-<link rel="stylesheet" href='{{ "/css/modal.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "css/main.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "css/header.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "css/footer.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "css/article.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "css/modal.css" | relURL }}' />
 
 <!-- js -->
-<script type="text/javascript" src="{{"js/main.js" | relURL}}"></script>
-<script type="text/javascript" src="{{"js/modal.js" | relURL}}"></script>
+<script type="text/javascript" src='{{ "js/main.js" | relURL }}'></script>
+<script type="text/javascript" src='{{ "js/modal.js" | relURL }}'></script>
+
+<!-- theme -->
+<link rel="stylesheet" href='{{ "css/dark-theme.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "css/light-theme.css" | relURL }}' />
+<script type="text/javascript" src='{{ "js/theme.js" | relURL }}'></script>
+
+<script>
+  const theme = !!localStorage.getItem('darkTheme');
+  console.log(theme)
+  if (theme) {
+    document.documentElement.classList.add('dark-theme')
+  }
+</script>
 
 <!-- custom js -->
-{{ if eq site.Params.customJs true }}<script type="text/javascript" src="{{ "/custom.js" | relURL }}"></script>{{ end }}
+{{ if eq site.Params.customJs true }}<script type="text/javascript" src='{{ "/custom.js" | relURL }}'></script>{{ end }}
 
 {{ partial "analytics.html" . }}
 {{ partial "adsense.html" . }}

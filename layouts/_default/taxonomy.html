@@ -1,22 +1,37 @@
 {{ define "main" }}
+<!-- tags and categories -->
 
-{{ range .Pages }}
-
-<div class="article-list">
-  <div class="article-info">
-    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-  </div>
-
-  {{ if .Params.tags }}
-  {{ range .Params.tags }}
-  <div class="article-tags">
-    {{ $url := print "/tags/" (. | urlize) "/" }}
-    <a href="{{ $url | relURL }}">{{ . }}</a>
-  </div>
-  {{ end }}
-  {{ end }}
+{{ if .Parent }}
+<div class="paths">
+  {{ if .Parent.Parent }}
+  {{ if .Parent.Parent.Parent }}
+  <a class="path" href="{{.Parent.Parent.Parent.Permalink }}">{{.Parent.Parent.Parent.Title }}</a> / {{end}}
+  <a class="path" href="{{.Parent.Parent.Permalink }}">{{.Parent.Parent.Title }}</a> / {{end}}
+  <a class="path" href="{{.Parent.Permalink }}">{{.Parent.Title }}</a>
 </div>
-
 {{ end }}
+
+<h1 class="items-title">{{ .Title }}</h1>
+
+<div class="items flex flex-column">
+
+  {{ range .Pages }}
+  <div class="item flex flex-row">
+    <a class="item-title" href="{{ .Permalink }}">
+      <h4>{{ .Title }}</h4>
+    </a>
+
+    {{ if .Params.tags }}
+    <div class="tags">
+      {{ range .Params.tags }}
+      {{ $url := print (site.Language.Lang) "/tags/" (. | urlize) }}
+      <a class="tag" href="{{$url | relURL }}">{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+</div>
 
 {{ end }}
