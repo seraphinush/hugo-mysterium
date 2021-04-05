@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>about on hugo-mysterium-theme</title>
+    <link>https://seraphinush.github.io/hugo-mysterium/categories/about/</link>
+    <description>Recent content in about on hugo-mysterium-theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Apr 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://seraphinush.github.io/hugo-mysterium/categories/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello world!</title>
+      <link>https://seraphinush.github.io/hugo-mysterium/hello/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://seraphinush.github.io/hugo-mysterium/hello/</guid>
+      <description>hugo-mysterium Hugo theme for personal gaming blog by seraphinush
+Demo
+Prerequisite Hugo Static Site Generator v0.64.0+
+Setup git submodule add https://github.com/seraphinush/hugo-mysterium.git themes/hugo-mysterium Config Custom logo  Add logo.png image file in /static folder Set logo to true in config.toml  Custom Favicon  Add favicon.png image file in /static folder Set favicon to true in config.toml  Custom Javascript  Add custom.js Javascript file in /static folder Set customJs to true in config.</description>
+    </item>
+    
+    <item>
+      <title>Markdown syntax guide</title>
+      <link>https://seraphinush.github.io/hugo-mysterium/syntax/</link>
+      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://seraphinush.github.io/hugo-mysterium/syntax/</guid>
+      <description>Headings # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 Alternatively, for H1 and H2, an underline-ish style: Alt-H1 ====== Alt-H2 ------ H1 H2 H3 H4 H5 H6 Alternatively, for H1 and H2, an underline-ish style:
+Alt-H1 Alt-H2 Emphasis Emphasis, aka italics, with *asterisks* or _underscores_. Strong emphasis, aka bold, with **asterisks** or __underscores__. Combined emphasis with **asterisks and _underscores_**. Strikethrough uses two tildes. ~~Scratch this.~~ Emphasis, aka italics, with asterisks or underscores.</description>
+    </item>
+    
+  </channel>
+</rss>

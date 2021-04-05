@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>text on hugo-mysterium-theme</title>
+    <link>https://seraphinush.github.io/hugo-mysterium/tags/text/</link>
+    <description>Recent content in text on hugo-mysterium-theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://seraphinush.github.io/hugo-mysterium/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Text post</title>
+      <link>https://seraphinush.github.io/hugo-mysterium/text-post/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://seraphinush.github.io/hugo-mysterium/text-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada fames. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Aliquet nibh praesent tristique magna. At quis risus sed vulputate odio. Mauris in aliquam sem fringilla ut morbi tincidunt augue. Malesuada proin libero nunc consequat interdum. Etiam non quam lacus suspendisse faucibus interdum.</description>
+    </item>
+    
+  </channel>
+</rss>

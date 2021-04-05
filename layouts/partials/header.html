@@ -1,36 +1,34 @@
 <!-- desktop -->
 <div class="nav flex flex-row">
-  <a href='{{ "/" | relURL }}'>
-    {{ if site.Params.logo }}
-    <img class="nav-logo" src='{{ "/logo.png" }}' alt="" />
-    {{else}}
-    <a class="focus" href='{{ "/" | relURL }}'>
-      <h1>{{ site.Title }}</h1>
+  {{ if site.Params.logo }}
+  <img class="nav-logo" src='{{ "/logo.png" }}' alt="" />
+  {{else}}
+  <a class="focus" href='{{ "/" | relURL }}'>
+    <h1>{{ site.Title }}</h1>
+  </a>
+  {{ end }}
+
+  <div class="links">
+    {{ range site.Params.nav }}
+    <a class="link" href='{{ .url | relURL }}'>
+      <span class="line-wrap"><span class="line"></span>
+        {{ .title }}
+      </span>
     </a>
     {{ end }}
+  </div>
 
-    <div class="links">
-      {{ range site.Params.nav }}
-      <a class="link" href='{{ .url | relURL }}'>
-        <span class="line-wrap"><span class="line"></span>
-          {{ .title }}
-        </span>
-      </a>
-      {{ end }}
+  <div class="desktop-theme flex-row">
+    <div class="separator-desktop"></div>
+    {{ if eq .Site.Language.Lang "ko" }}
+    <span class="link">디자인 :</span>
+    {{ else }}
+    <span class="link">Appearance :</span>
+    {{ end }}
+    <div id="desktop-theme" class="button">
+      <div id="desktop-theme-toggle" class="button-toggle"></div>
     </div>
-
-    <div class="desktop-theme flex-row">
-      <div class="separator-desktop"></div>
-      {{ if eq .Site.Language.Lang "ko" }}
-      <span class="link">디자인 :</span>
-      {{ else }}
-      <span class="link">Appearance :</span>
-      {{ end }}
-      <div id="desktop-theme" class="button">
-        <div id="desktop-theme-toggle" class="button-toggle"></div>
-      </div>
-    </div>
-  </a>
+  </div>
 </div>
 
 <!-- mobile -->

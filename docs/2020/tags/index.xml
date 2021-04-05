@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on hugo-mysterium-theme</title>
-    <link>https://seraphinush.github.io/hugo-mysterium/tags/</link>
+    <link>https://seraphinush.github.io/hugo-mysterium/2020/tags/</link>
     <description>Recent content in Tags on hugo-mysterium-theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://seraphinush.github.io/hugo-mysterium/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://seraphinush.github.io/hugo-mysterium/2020/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>text</title>
-      <link>https://seraphinush.github.io/hugo-mysterium/tags/text/</link>
+      <link>https://seraphinush.github.io/hugo-mysterium/2020/tags/text/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://seraphinush.github.io/hugo-mysterium/tags/text/</guid>
+      <guid>https://seraphinush.github.io/hugo-mysterium/2020/tags/text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>image</title>
-      <link>https://seraphinush.github.io/hugo-mysterium/tags/image/</link>
+      <link>https://seraphinush.github.io/hugo-mysterium/2020/tags/image/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://seraphinush.github.io/hugo-mysterium/tags/image/</guid>
+      <guid>https://seraphinush.github.io/hugo-mysterium/2020/tags/image/</guid>
       <description></description>
     </item>
     
     <item>
       <title>introduction</title>
-      <link>https://seraphinush.github.io/hugo-mysterium/tags/introduction/</link>
+      <link>https://seraphinush.github.io/hugo-mysterium/2020/tags/introduction/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://seraphinush.github.io/hugo-mysterium/tags/introduction/</guid>
+      <guid>https://seraphinush.github.io/hugo-mysterium/2020/tags/introduction/</guid>
       <description></description>
     </item>
     

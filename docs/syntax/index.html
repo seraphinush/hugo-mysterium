@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<title>hugo-mysterium-theme</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content='hugo theme for personal gaming blog by seraphinush'>
+
+
+
+<link rel="stylesheet" href='/hugo-mysterium/css/main.css' />
+<link rel="stylesheet" href='/hugo-mysterium/css/header.css' />
+<link rel="stylesheet" href='/hugo-mysterium/css/footer.css' />
+<link rel="stylesheet" href='/hugo-mysterium/css/article.css' />
+<link rel="stylesheet" href='/hugo-mysterium/css/modal.css' />
+
+
+<script type="text/javascript" src='/hugo-mysterium/js/main.js'></script>
+<script type="text/javascript" src='/hugo-mysterium/js/modal.js'></script>
+
+
+<link rel="stylesheet" href='/hugo-mysterium/css/dark-theme.css' />
+<link rel="stylesheet" href='/hugo-mysterium/css/light-theme.css' />
+<script type="text/javascript" src='/hugo-mysterium/js/theme.js'></script>
+
+<script>
+  const theme = !!localStorage.getItem('darkTheme');
+  console.log(theme)
+  if (theme) {
+    document.documentElement.classList.add('dark-theme')
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+  <div class="wrapper flex  flex-column">
+    
+<div class="nav flex flex-row">
+    
+    <a class="focus" href='/hugo-mysterium/'>
+      <h1>hugo-mysterium-theme</h1>
+    </a>
+    
+
+    <div class="links">
+      
+      <a class="link" href='/hugo-mysterium/'>
+        <span class="line-wrap"><span class="line"></span>
+          link_1
+        </span>
+      </a>
+      
+      <a class="link" href='/hugo-mysterium/'>
+        <span class="line-wrap"><span class="line"></span>
+          link_2
+        </span>
+      </a>
+      
+      <a class="link" href='/hugo-mysterium/'>
+        <span class="line-wrap"><span class="line"></span>
+          link_3
+        </span>
+      </a>
+      
+    </div>
+
+    <div class="desktop-theme flex-row">
+      <div class="separator-desktop"></div>
+      
+      <span class="link">Appearance :</span>
+      
+      <div id="desktop-theme" class="button">
+        <div id="desktop-theme-toggle" class="button-toggle"></div>
+      </div>
+    </div>
+</div>
+
+
+<div class="burgers">
+  <div class="burger"></div>
+</div>
+
+<div class="nav-mobile flex flex-column">
+  <div class="links-mobile flex flex-column">
+    
+    <a class="link-mobile" href='/hugo-mysterium/'>
+      <span class="line-wrap"><span class="line"></span>
+        <h2>link_1</h2>
+      </span>
+    </a>
+    
+    <a class="link-mobile" href='/hugo-mysterium/'>
+      <span class="line-wrap"><span class="line"></span>
+        <h2>link_2</h2>
+      </span>
+    </a>
+    
+    <a class="link-mobile" href='/hugo-mysterium/'>
+      <span class="line-wrap"><span class="line"></span>
+        <h2>link_3</h2>
+      </span>
+    </a>
+    
+  </div>
+
+  <div class="separator-mobile"></div>
+
+  <div class="mobile-theme flex flex-row">
+    
+    <h2>Appearance :</h2>
+    
+    <div id="mobile-theme" class="button">
+      <div id="mobile-theme-toggle" class="button-toggle"></div>
+    </div>
+  </div>
+</div>
+    <div id="modal-container">
+  <span id="modal-close">&times;</span>
+  <span style="display: inline-block; height: 50%;"></span>
+  <img id="modal-image" />
+</div>
+    <div class="content flex flex-column">
+      
+
+
+
+<div class="paths">
+  
+  <a class="path" href="https://seraphinush.github.io/hugo-mysterium/">hugo-mysterium-theme</a>
+</div>
+
+
+<h1 class="items-title">Markdown syntax guide</h1>
+
+<div class="items">
+
+  <div class="post">
+    <div class="frontmatter">
+      <p>Published : Apr 4, 2021 </p>
+      
+    </div>
+    <h2 id="headings">Headings</h2>
+<pre><code># H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+Alternatively, for H1 and H2, an underline-ish style:
+
+Alt-H1
+======
+
+Alt-H2
+------
+</code></pre><h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+<p>Alternatively, for H1 and H2, an underline-ish style:</p>
+<h1 id="alt-h1">Alt-H1</h1>
+<h2 id="alt-h2">Alt-H2</h2>
+<h2 id="emphasis">Emphasis</h2>
+<pre><code>Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+</code></pre><p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+<p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
+<h2 id="paragraph">Paragraph</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+<h2 id="blockquote">Blockquote</h2>
+<blockquote>
+<p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+</blockquote>
+<h2 id="tables">Tables</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Column</th>
+<th align="center">Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Row</td>
+<td align="center">Row</td>
+</tr>
+</tbody>
+</table>
+<h2 id="code-blocks">Code blocks</h2>
+<h3 id="code-block-with-three-grave-accents">Code block with three grave accents</h3>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h3 id="code-block-with-four-spaces">Code block with four spaces</h3>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="inline-code-block-with-a-grave-accent">Inline-code block with a grave accent</h3>
+<pre><code>Inline `code` has `grave accents around` it.
+</code></pre><p>Inline <code>code</code> has <code>grave accents around</code> it.</p>
+<h2 id="list-types">List types</h2>
+<h3 id="ordered-list">Ordered list</h3>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<h3 id="unordered-list">Unordered list</h3>
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ul>
+<h3 id="nested-list">Nested list</h3>
+<ul>
+<li>First item
+<ul>
+<li>Second item
+<ul>
+<li>Third item</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+    
+    <div class="source">
+      <p>Source(s) : </p>
+      
+      <p>- This is a <code>source</code> frontmatter.</p>
+      
+      <p>- <code>Source</code> frontmatter must be placed in an Array.</p>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+
+    </div>
+    <div class="footer flex flex-column">
+
+  <h4 class="focus">hugo-mysterium-theme</h4>
+  <p>hugo theme for personal gaming blog by seraphinush</p>
+
+  <div class="socials flex flex-column">
+      
+  </div>
+
+</div>
+  </div>
+</body>
+
+</html>
