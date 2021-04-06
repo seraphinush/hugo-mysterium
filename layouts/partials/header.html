@@ -1,7 +1,9 @@
 <!-- desktop -->
 <div class="nav flex flex-row">
   {{ if site.Params.logo }}
-  <img class="nav-logo" src='{{ "/logo.png" }}' alt="" />
+  <a href='{{ "/" | relURL }}'>
+    <img class="nav-logo" src='{{ "/logo.png" }}' alt="" />
+  </a>
   {{else}}
   <a class="focus" href='{{ "/" | relURL }}'>
     <h1>{{ site.Title }}</h1>
