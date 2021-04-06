@@ -24,10 +24,10 @@
     </div>
     {{ .Content }}
 
-    {{ if isset .Params "source" }}
-    <div class="source">
+    {{ if isset .Params "sources" }}
+    <div class="sources">
       <p>Source(s) : </p>
-      {{range .Params.source }}
+      {{range .Params.sources }}
       <p>- {{ . | markdownify }}</p>
       {{ end }}
     </div>
