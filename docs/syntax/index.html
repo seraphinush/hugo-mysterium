@@ -25,10 +25,7 @@
 
 <script>
   const theme = !!localStorage.getItem('darkTheme');
-  console.log(theme)
-  if (theme) {
-    document.documentElement.classList.add('dark-theme')
-  }
+  if (theme) document.documentElement.classList.add('dark-theme')
 </script>
 
 
@@ -45,43 +42,43 @@
   <div class="wrapper flex  flex-column">
     
 <div class="nav flex flex-row">
+  
+  <a href='/hugo-mysterium/'>
+    <img class="nav-logo" src='/logo.png' alt="" />
+  </a>
+  
+
+  <div class="links">
     
-    <a class="focus" href='/hugo-mysterium/'>
-      <h1>hugo-mysterium-theme</h1>
+    <a class="link" href='/hugo-mysterium/'>
+      <span class="line-wrap"><span class="line"></span>
+        link_1
+      </span>
     </a>
     
+    <a class="link" href='/hugo-mysterium/'>
+      <span class="line-wrap"><span class="line"></span>
+        link_2
+      </span>
+    </a>
+    
+    <a class="link" href='/hugo-mysterium/'>
+      <span class="line-wrap"><span class="line"></span>
+        link_3
+      </span>
+    </a>
+    
+  </div>
 
-    <div class="links">
-      
-      <a class="link" href='/hugo-mysterium/'>
-        <span class="line-wrap"><span class="line"></span>
-          link_1
-        </span>
-      </a>
-      
-      <a class="link" href='/hugo-mysterium/'>
-        <span class="line-wrap"><span class="line"></span>
-          link_2
-        </span>
-      </a>
-      
-      <a class="link" href='/hugo-mysterium/'>
-        <span class="line-wrap"><span class="line"></span>
-          link_3
-        </span>
-      </a>
-      
+  <div class="desktop-theme flex-row">
+    <div class="separator-desktop"></div>
+    
+    <span class="link">Appearance :</span>
+    
+    <div id="desktop-theme" class="button">
+      <div id="desktop-theme-toggle" class="button-toggle"></div>
     </div>
-
-    <div class="desktop-theme flex-row">
-      <div class="separator-desktop"></div>
-      
-      <span class="link">Appearance :</span>
-      
-      <div id="desktop-theme" class="button">
-        <div id="desktop-theme-toggle" class="button-toggle"></div>
-      </div>
-    </div>
+  </div>
 </div>
 
 
@@ -255,15 +252,6 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 </ul>
 
 
-    
-    <div class="source">
-      <p>Source(s) : </p>
-      
-      <p>- This is a <code>source</code> frontmatter.</p>
-      
-      <p>- <code>Source</code> frontmatter must be placed in an Array.</p>
-      
-    </div>
     
   </div>
 

@@ -65,7 +65,7 @@ p code, li code, table code {
   margin-bottom: 25px;
 }
 
-.source {
+.sources {
   margin-top: 25px;
 }
 
@@ -76,7 +76,7 @@ p code, li code, table code {
 }
 
 .items-title {
-  color: var(--color-font-bold);
+  color: var(--color-header);
   margin-bottom: 20px;
 }
 
@@ -99,7 +99,7 @@ p code, li code, table code {
   color: var(--color-font-light);
 }
 
-.source a {
+.sources a {
   color: var(--color-font);
 }
 
