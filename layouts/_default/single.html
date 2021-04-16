@@ -17,7 +17,9 @@
 
   <div class="post">
     <div class="frontmatter">
+      {{ if .Date }}
       <p>Published : {{ .Date.Format "Jan 2, 2006" }} </p>
+      {{ end }}
       {{ if isset .Params .Lastmod }}
       <p>Last modified : {{ .Lastmod.Format "Jan 2, 2006" }} </p>
       {{ end }}
@@ -27,9 +29,11 @@
     {{ if isset .Params "sources" }}
     <div class="sources">
       <p>Source(s) : </p>
-      {{range .Params.sources }}
-      <p>- {{ . | markdownify }}</p>
-      {{ end }}
+      <ul>
+        {{ range .Params.sources }}
+        <li>{{ . | markdownify }}</li>
+        {{ end }}
+      </ul>
     </div>
     {{ end }}
   </div>
