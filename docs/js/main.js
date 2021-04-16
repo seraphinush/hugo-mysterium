@@ -1,18 +1,16 @@
 window.addEventListener('load', function () {
-  // helper
-  //const sleep = (ms) => { return new Promise((resolve) => { setTimeout(resolve, ms); }); }
-
   // sidebar toggle
   const burgers = document.querySelector('.burgers');
   const navMobile = document.querySelector('.nav-mobile');
+
   let menuOpen = false;
   burgers.addEventListener('click', () => {
     if (menuOpen) {
-      burgers.classList.remove('toggle');
+      burgers.classList.remove('active');
       navMobile.classList.remove('open');
       menuOpen = false;
     } else {
-      burgers.classList.add('toggle');
+      burgers.classList.add('active');
       navMobile.classList.add('open');
       menuOpen = true;
     }

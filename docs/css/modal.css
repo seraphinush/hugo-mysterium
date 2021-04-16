@@ -11,18 +11,18 @@
   z-index: 6;
 }
 
-#modal-close {
+#modal-close-button {
   position: absolute;
-  top: 1rem;
+  top: 1.25rem;
   right: 1rem;
   font-size: 3rem;
   line-height: 1rem;
   cursor: pointer;
   transition: 0.3s;
-  color: #FFF;
 }
 
 #modal-image {
+  position: relative;
   display: inline-block;
   max-width: 95%;
   max-height: 80%;
