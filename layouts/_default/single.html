@@ -24,8 +24,8 @@
       <p>Last modified : {{ .Lastmod.Format "Jan 2, 2006" }} </p>
       {{ end }}
     </div>
-    {{ .Content }}
-
+    {{ $wrappedTable := printf "<div class=table-wrapper> ${1} </div>" }}
+    {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
     {{ if isset .Params "sources" }}
     <div class="sources">
       <p>Source(s) : </p>
