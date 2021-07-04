@@ -1,0 +1,15 @@
+<!-- google adsense : in-article-ad -->
+
+{{ if site.Params.Adsense.inArticleSlot }}
+<br />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="{{ site.Params.Adsense.client }}"
+     data-ad-slot="{{ site.Params.Adsense.inArticleSlot }}"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+{{ end }}

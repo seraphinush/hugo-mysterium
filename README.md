@@ -35,10 +35,10 @@ theme = "hugo-mysterium"
 
 # If multilingual support
 defaultContentLanguage = "en"
-DefaultContentLanguageInSubdir = true
+DefaultContentLanguageInSubdir = true | false
 
 # Miscellaneous
-pluralizelisttitles = false
+pluralizelisttitles = true | false
 
 [params]
 description = "Description"
@@ -53,9 +53,14 @@ favicon = true | false
 # Custom JS
 customJs = true | false
 
-# Google Analytics, Adsense
-analyticsId = "UA-12345678-9"
-adsenseId = "xx-yyy-1234567891234567"
+# Google Analytics
+[params.analytics]
+client = "xx-yyy-12345"
+
+# Google Adsense
+[params.adsense]
+client = "xx-yyy-12345"
+inArticleSlot = "12345"
 
 # Custom navigation items
 [[params.nav]]

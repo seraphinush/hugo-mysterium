@@ -8,6 +8,7 @@
     {{ partial "modal.html" . }}
     <div class="content flex flex-column">
       {{ block "main" . }}{{ end }}
+      {{ partial "adsense-inArticle.html" . }}
     </div>
     {{ partial "footer.html" . }}
   </div>
