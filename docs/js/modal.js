@@ -20,8 +20,9 @@ window.addEventListener('load', function () {
       modalActive = false;
 
       // background
+      document.body.style.overscrollBehaviorY = '';
       const scrollY = document.body.style.top;
-      document.body.style.position = '';
+      document.body.style.overflowY = '';
       document.body.style.top = '';
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }, parseFloat(animationDuration) * 1000);
@@ -30,16 +31,18 @@ window.addEventListener('load', function () {
   openModal = (e) => {
     if (e.target.classList.contains('nav-logo')) return;
     if (e.target.localName == 'img') {
+      modalImage.src = e.target.src;
       modalImage.style['animation-name'] = 'zoom-in';
       modalImage.style['-webkit-animation-name'] = 'zoom-in';
-      modalImage.src = e.target.src;
       modalContainer.style.display = 'block';
       burgers.style.display = 'none';
       modalActive = true;
 
       // background
       document.body.style.top = '-' + window.scrollY + 'px';
-      document.body.style.position = 'fixed';
+      document.body.style.overflowY = 'hidden';
+      // prevent pull-down-to-refresh
+      document.body.style.overscrollBehaviorY = 'contain';
     }
   }
 

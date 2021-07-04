@@ -147,6 +147,7 @@
       
       
     </div>
+    
     <h1 id="hugo-mysterium">hugo-mysterium</h1>
 <p>Hugo theme for personal gaming blog by seraphinush</p>
 <p><a href="https://seraphinush.github.io/hugo-mysterium/">Demo</a></p>
@@ -179,10 +180,10 @@ theme = &quot;hugo-mysterium&quot;
 
 # If multilingual support
 defaultContentLanguage = &quot;en&quot;
-DefaultContentLanguageInSubdir = true
+DefaultContentLanguageInSubdir = true | false
 
 # Miscellaneous
-pluralizelisttitles = false
+pluralizelisttitles = true | false
 
 [params]
 description = &quot;Description&quot;
@@ -197,9 +198,14 @@ favicon = true | false
 # Custom JS
 customJs = true | false
 
-# Google Analytics, Adsense
-analyticsId = &quot;UA-12345678-9&quot;
-adsenseId = &quot;xx-yyy-1234567891234567&quot;
+# Google Analytics
+[params.analytics]
+client = &quot;xx-yyy-12345&quot;
+
+# Google Adsense
+[params.adsense]
+client = &quot;xx-yyy-12345&quot;
+inArticleSlot = &quot;12345&quot;
 
 # Custom navigation items
 [[params.nav]]
@@ -215,11 +221,13 @@ adsenseId = &quot;xx-yyy-1234567891234567&quot;
 <p>Copyright 2020 - present Seraphinus Hong</p>
 <p>Released under the MIT License</p>
 
-
     
   </div>
 
 </div>
+
+
+      
 
 
     </div>
