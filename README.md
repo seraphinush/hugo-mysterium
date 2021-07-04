@@ -26,7 +26,7 @@ git submodule add https://github.com/seraphinush/hugo-mysterium.git themes/hugo-
 - Set `customJs` to `true` in `config.toml`
 
 ## config.toml example
-```toml
+```
 title = "Title"
 baseURL = "https://<my-account-id>.github.io/<repository-name>/"
 publishDir = "docs"
