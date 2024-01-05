@@ -75,6 +75,6 @@ inArticleSlot = "12345"
 ```
 
 ## License
-Copyright 2020 - present Seraphinus Hong
+Copyright 2020 Seraphinus Hong
 
 Released under the [MIT License](LICENSE)
